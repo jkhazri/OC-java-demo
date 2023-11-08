@@ -12,6 +12,7 @@ spec:
   ports:
   - protocol: TCP
     port: 8030
+    NodePort: 20102 # choose a port in the nodeport given range
     name: http
 
 ---
