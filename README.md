@@ -40,7 +40,7 @@ kubectl apply -f stockmanager-service.yaml
 kubectl get pods
 kubectl get svc
 ```
-kubectl get svc command gives you the services of the java application. Here an example of what this command may givbe you in return: 
+kubectl get svc command gives you the services of the java application. Here an example this command output : 
 
 ```
 NAME               TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)          AGE
