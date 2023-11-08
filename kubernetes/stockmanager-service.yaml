@@ -35,9 +35,3 @@ spec:
         image: oneclouddh/get-started:stockmanagerV1
         ports:
         - containerPort: 8030
-        livenessProbe:
-          httpGet:
-            path: /health
-            port: 8030
-          initialDelaySeconds: 30
-          timeoutSeconds: 1
