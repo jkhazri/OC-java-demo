@@ -17,7 +17,7 @@ kubectl apply -f productcatalogue-service.yaml
 kubectl get pods
 kubectl get svc
 ```
-kubectl get svc command gives you the services of the java application 
+kubectl get svc command gives you the services of the java application. Here an example of what this command may givbe you in return: 
 
 ```
 NAME               TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)          AGE
