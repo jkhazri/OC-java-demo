@@ -7,7 +7,7 @@ cd OC-java-demo
 ```
 
 2. time to deploy the application on the cluster kubernetes. before that check the nodePort number it should be in the given port range of the vcluster.
-You may need to change nodePort number inside the 3 yaml files under kubernetes shopfront-service.yaml / productcatalogue-service.yaml / stockmanager-service.yaml.
+You may need to change nodePort number inside the 3 yaml files under OC-java-demo/kubernetes/ folder shopfront-service.yaml / productcatalogue-service.yaml / stockmanager-service.yaml.
 For example in the productcatalogue-service.yaml we have nodePort: 20100 so you may change this number. (choose diffrent port number in every yaml file)
 
 ```
