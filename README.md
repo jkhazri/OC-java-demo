@@ -1,4 +1,31 @@
 # docker-Java-kubernetes-project
+## what you need to check before preparing your deployment
+
+**Important**: 
+
+Please make sure you have enough resources in your Vcluseter before you start your deployment.
+
+**Best practice :** 
+You may need to limit your application ressources by adding what we called ResourceQuota kubernetes kind in your deployment Yaml file.
+
+In this example, I've added at the end of  the stockmanager-service.yaml file a ResourceQuota named stockmanager-resource-quota with limits for CPU, memory, and the number of pods  . 
+Adjust these values based on your application's requirements and the available resources in your Kubernetes cluster.
+
+If you need to learn more about the ResourceQuota , please refer to this documentation : https://kubernetes.io/docs/concepts/policy/resource-quotas/
+
+```bash
+---
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+  name: stockmanager-resource-quota
+spec:
+  hard:
+    cpu: "200m"      # 0.2 CPU cores
+    memory: "256Mi"  # 256 Megabytes of memory
+    pods: "1"        # 1 pod
+
+```
 Deploying Java Applications with Docker and Kubernetes
 1. you need to have a kubernetes cluster installed on your pc.then clone the project and move under OC-java-demo folder.
 ```
